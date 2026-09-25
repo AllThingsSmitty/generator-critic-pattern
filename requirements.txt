@@ -1,0 +1,7 @@
+# anthropic 1.x requires Python >= 3.10 and is where messages.parse() /
+# output_config structured outputs are current -- see README.md.
+anthropic>=1.0.0
+pydantic>=2.7
+langgraph>=0.2.0
+python-dotenv>=1.0
+matplotlib>=3.8
