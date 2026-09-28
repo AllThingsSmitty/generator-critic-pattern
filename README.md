@@ -1,5 +1,7 @@
 # Generator-Critic Pattern
 
+[![CI](https://github.com/AllThingsSmitty/generator-critic-pattern/actions/workflows/ci.yml/badge.svg)](https://github.com/AllThingsSmitty/generator-critic-pattern/actions/workflows/ci.yml)
+
 Generator-critic (also called Reflection, or Evaluator-Optimizer) runs two
 roles in a loop. A **generator** produces an output, a **critic** evaluates
 it independently, and the generator revises based on that critique. The
@@ -32,10 +34,10 @@ runnable code showing the failure and the fix:
 - [`03_diminishing_returns`](failure_modes/03_diminishing_returns/): logging quality per iteration so you can see when gains flatten out
 - [`04_skippable_critic`](failure_modes/04_skippable_critic/): enforcing call order in code instead of trusting the LLM to follow instructions
 
-`decision_guide/` walks through when to reach for single-model
-self-critique, separate-model critique, or a tool-grounded critique (a
-linter, compiler, or schema validator), with rough cost/latency/quality
-tradeoffs.
+[`decision_guide/`](decision_guide/README.md) walks through when to reach
+for single-model self-critique, separate-model critique, or a
+tool-grounded critique (a linter, compiler, or schema validator), with
+rough cost/latency/quality tradeoffs.
 
 ## Running the examples
 
