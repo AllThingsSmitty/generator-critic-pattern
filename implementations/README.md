@@ -14,7 +14,7 @@ the framework actually adds.
 | When this shape earns its keep | Small, linear pipelines                                      | Multiple critics, branching repair strategies, or you want the graph structure itself visualized as the pipeline grows |
 
 Neither one is "the" correct implementation. The pattern is the loop, not
-what you build it in (see the [top-level README](../README.md)). Reach for
+what you build it in (see the [project README](../README.md)). Reach for
 LangGraph once the orchestration gets complicated enough that you'd rather
 see it as a graph than as nested conditionals in a function: multiple
 critic types routed conditionally, parallel critics, human-in-the-loop
